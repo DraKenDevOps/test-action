@@ -12,11 +12,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Build the Docker image
-              run: docker build -t spowen2docker/rsa-gen:$(date +%s) .
+              run: docker build -t spowen2docker/rsa-gen:1.0.0 .
             - name: Log in to Docker Hub
               uses: docker/login-action@v1
               with:
                   username: "spowen2docker"
                   password: "Spidey@2099.com.la"
             - name: Push the Docker image
-              run: docker push spowen2docker/rsa-gen:$(date +%s)
+              run: docker push spowen2docker/rsa-gen:1.0.0
