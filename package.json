@@ -4,9 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node --trace-warnings index.js"
+        "dev": "nodemon -q index.js"
     },
     "keywords": [],
     "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
 }
